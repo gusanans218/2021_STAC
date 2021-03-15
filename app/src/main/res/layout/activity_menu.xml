@@ -7,36 +7,45 @@
     tools:context=".Menu">
 
 
-    <Button
+    <ImageButton
+        android:src="@drawable/qrcodere"
         android:id="@+id/qrcode"
+
         android:layout_width="163dp"
         android:layout_height="147dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="88dp"
         android:layout_marginBottom="196dp"
-        android:background="@drawable/intro_menu_btn_shape"
+        android:="@drawable/qrcodere"
+        android:background="@drawable/qrcodecover"
+        android:scaleType="centerInside"
         android:text="qrcode"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/toilet"
         android:layout_width="81dp"
         android:layout_height="261dp"
-        android:layout_marginBottom="196dp"
-        android:background="@drawable/intro_menu_btn_shape"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/qrcodecover"
         android:text="toilet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintHorizontal_bias="0.196"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <ImageButton
+        android:scaleType="centerInside"
+        android:src="@drawable/toilet"
         android:id="@+id/toiletpic"
         android:layout_width="112dp"
         android:layout_height="98dp"
         android:layout_marginEnd="176dp"
-        android:layout_marginBottom="356dp"
-        android:background="@drawable/intro_menu_btn_shape"
+        android:layout_marginBottom="364dp"
+        android:background="@drawable/qrcodecover"
         android:text="toiletpic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -46,7 +55,7 @@
         android:layout_width="81dp"
         android:layout_height="223dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="356dp"
+        android:layout_marginBottom="364dp"
         android:background="@drawable/intro_menu_btn_shape"
         android:text="exit"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,20 +73,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.238" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/qrcode2"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="398dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="226dp"
-        android:layout_height="296dp"
-        app:srcCompat="@drawable/qrcodere"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="407dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
