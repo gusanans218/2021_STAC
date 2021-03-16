@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,24 +9,24 @@
 
 
     <ImageButton
-        android:src="@drawable/qrcodere"
         android:id="@+id/qrcode"
-
         android:layout_width="163dp"
         android:layout_height="147dp"
         android:layout_marginTop="388dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginEnd="80dp"
         android:layout_marginBottom="196dp"
         android:="@drawable/qrcodere"
         android:background="@drawable/qrcodecover"
+        android:padding="15dp"
         android:scaleType="centerInside"
+        android:src="@drawable/qrcodere"
         android:text="qrcode"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <ImageButton
         android:id="@+id/toilet"
         android:layout_width="81dp"
         android:layout_height="261dp"
@@ -34,40 +35,47 @@
         android:text="toilet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
+        android:id="@+id/toiletpic"
         android:scaleType="centerInside"
         android:src="@drawable/toilet"
-        android:id="@+id/toiletpic"
         android:layout_width="112dp"
         android:layout_height="98dp"
         android:layout_marginEnd="176dp"
         android:layout_marginBottom="364dp"
         android:background="@drawable/qrcodecover"
         android:text="toiletpic"
+        android:padding="9dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/exit"
         android:layout_width="81dp"
         android:layout_height="223dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="364dp"
-        android:background="@drawable/intro_menu_btn_shape"
+        android:src="@drawable/exit"
+        android:padding="9dp"
+        android:background="@drawable/qrcodecover"
+        android:scaleType="fitStart"
         android:text="exit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/caution"
         android:layout_width="107dp"
         android:layout_height="111dp"
         android:layout_marginEnd="176dp"
-        android:background="@drawable/intro_menu_btn_shape"
+        android:background="@drawable/qrcodecover"
+        android:src="@drawable/caution"
+        android:scaleType="centerInside"
         android:text="caution"
+        android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
