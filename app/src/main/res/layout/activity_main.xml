@@ -1,19 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Menu">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="253dp"
-        android:layout_height="520dp"
+
+        <ImageButton
+        android:id="@+id/qrcode"
+        android:layout_width="163dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/qrcodecover"
+        android:padding="15dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/qrcodere"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/toilet"
+        android:layout_width="81dp"
+        android:layout_height="261dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/qrcodecover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/toiletpic"
+        android:scaleType="centerInside"
+        android:src="@drawable/toilet"
+        android:layout_width="112dp"
+        android:layout_height="98dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="364dp"
+        android:background="@drawable/qrcodecover"
+        android:padding="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="81dp"
+        android:layout_height="223dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="364dp"
+        android:src="@drawable/exit"
+        android:padding="9dp"
+        android:background="@drawable/qrcodecover"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/caution"
+        android:layout_width="107dp"
+        android:layout_height="111dp"
+        android:layout_marginEnd="176dp"
+        android:background="@drawable/qrcodecover"
+        android:src="@drawable/caution"
+        android:scaleType="centerInside"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
