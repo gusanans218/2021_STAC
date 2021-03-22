@@ -1,78 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="5dp"
     tools:context=".Menu">
 
 
-        <ImageButton
+    <ImageView
         android:id="@+id/qrcode"
-        android:layout_width="163dp"
-        android:layout_height="147dp"
-        android:layout_marginTop="388dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="196dp"
+        android:layout_width="200dp"
+        android:layout_height="172dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/qrcodecover"
-        android:padding="15dp"
+        android:padding="23dp"
         android:scaleType="centerInside"
-        android:src="@drawable/qrcodere"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/qrcode12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exit" />
 
     <ImageButton
+        android:id="@+id/qrcodebutton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="203dp"
+        android:layout_height="172dp"
+        android:background="#80000000"
+        android:layout_margin="15dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exit" />
+
+    <ImageView
         android:id="@+id/toilet"
-        android:layout_width="81dp"
-        android:layout_height="261dp"
-        android:layout_marginBottom="200dp"
+        android:layout_width="97dp"
+        android:layout_height="334dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/qrcodecover"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caution" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/toiletpic"
+        android:layout_width="151dp"
+        android:layout_height="139dp"
+        android:layout_margin="7dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/qrcodecover"
+        android:padding="9dp"
         android:scaleType="centerInside"
         android:src="@drawable/toilet"
-        android:layout_width="112dp"
-        android:layout_height="98dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginBottom="364dp"
-        android:background="@drawable/qrcodecover"
-        android:padding="9dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caution" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/exit"
-        android:layout_width="81dp"
-        android:layout_height="223dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="364dp"
-        android:src="@drawable/exit"
-        android:padding="9dp"
+        android:layout_width="109dp"
+        android:layout_height="261dp"
+        android:layout_margin="5dp"
         android:background="@drawable/qrcodecover"
+        android:padding="9dp"
         android:scaleType="fitStart"
+        android:src="@drawable/exit12"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/caution"
         android:layout_width="107dp"
         android:layout_height="111dp"
-        android:layout_marginEnd="176dp"
+        android:layout_margin="5dp"
         android:background="@drawable/qrcodecover"
-        android:src="@drawable/caution"
-        android:scaleType="centerInside"
         android:padding="15dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/caution"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.238" />
+        app:layout_constraintVertical_bias="0.183" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="103dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
