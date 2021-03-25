@@ -3,9 +3,9 @@ package com.example.a2021_stac
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Menu : AppCompatActivity() {
+class qrcode : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
+        setContentView(R.layout.activity_qrcode)
     }
 }
